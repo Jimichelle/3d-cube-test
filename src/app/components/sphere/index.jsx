@@ -10,7 +10,7 @@ export default function sphere() {
     return (
         <div className={styles.main}>
             <Canvas>
-                <OrbitControls />
+                <OrbitControls enableZoom={false} />
                 <ambientLight  intensity={2}/>
                 <directionalLight position={[2, 1, 1]} />
                 <Sphere />
@@ -24,17 +24,20 @@ function Sphere() {
     const mesh = useRef( null );
 
     useFrame( (state, delta) => {
-        mesh.current.rotation.x += delta * 0.25;
+        mesh.current.rotation.x += delta * 0;
         mesh.current.rotation.y += delta * 0.25;
-        mesh.current.rotation.z += delta * 0.25;
+        mesh.current.rotation.z += delta * 0;
 
     });
 
+    const texture_1 = useLoader(TextureLoader, "/assets/earth-map.jpg")
+
+    
 
     return (
         <mesh ref = {mesh}>
             <sphereGeometry args={[2]}/>
-            <meshStandardMaterial color={"orange"} />
+            <meshStandardMaterial map={texture_1} />
 
         </mesh>
     )
