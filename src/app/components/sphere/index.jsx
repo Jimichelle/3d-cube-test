@@ -10,7 +10,7 @@ export default function sphere() {
     return (
         <div className={styles.main}>
             <Canvas>
-                <OrbitControls enableZoom={false} />
+                <OrbitControls enableZoom={false}/>
                 <ambientLight  intensity={2}/>
                 <directionalLight position={[2, 1, 1]} />
                 <Sphere />

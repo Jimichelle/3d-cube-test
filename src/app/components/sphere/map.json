@@ -1,0 +1,29 @@
+{
+    "type" : "Map",
+    "Co-ordinate": [
+        {
+            "text" : "FRA",
+            "size": 1.0,
+            "Country": "France",
+            "city": "Paris",
+            "lat": 48.856614,
+            "lng": 2.1229633
+        },
+        {
+            "text" : "FRA",
+            "size": 1.0,
+            "Country": "France",
+            "city": "Lyon",
+            "lat": 45.764043,
+            "lng": 4.835659
+        },
+        {
+            "text" : "USA",
+            "size": 1.0,
+            "Country": "United States",
+            "city": "New York",
+            "lat": 40.712784,
+            "lng": -74.005941
+        }
+    ]
+}
